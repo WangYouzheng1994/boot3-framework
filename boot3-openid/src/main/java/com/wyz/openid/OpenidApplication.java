@@ -1,13 +1,13 @@
-package com.wyz.boot3framework;
+package com.wyz.openid;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Boot3FrameworkApplication {
+public class OpenidApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Boot3FrameworkApplication.class, args);
+        SpringApplication.run(OpenidApplication.class, args);
     }
 
 }
