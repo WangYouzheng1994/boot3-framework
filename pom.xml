@@ -144,6 +144,7 @@
     <modules>
         <module>boot3-openid</module>
         <module>boot3-gateway</module>
+        <module>boot3-system</module>
     </modules>
 
     <build>
