@@ -31,6 +31,8 @@
                 <scope>import</scope>
             </dependency>
 
+            <!--
+            如果这里加上，那么就不会用parent里面的值了。。。全完犊子~
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-amqp</artifactId>
@@ -135,12 +137,13 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-test</artifactId>
                 <scope>test</scope>
-            </dependency>
+            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>boot3-openid</module>
+        <module>boot3-gateway</module>
     </modules>
 
     <build>

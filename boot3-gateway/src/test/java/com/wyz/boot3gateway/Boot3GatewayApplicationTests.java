@@ -1,10 +1,10 @@
-package com.wyz.boot3framework;
+package com.wyz.boot3gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Boot3FrameworkApplicationTests {
+class Boot3GatewayApplicationTests {
 
     @Test
     void contextLoads() {
