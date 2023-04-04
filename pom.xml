@@ -17,6 +17,8 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
+        <fastjson2.version>2.0.26</fastjson2.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
     </properties>
     <dependencies>
 
@@ -31,6 +33,40 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- JSON 解析器和生成器 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!--log4j2 start -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+
+            <!--    Log4j2 异步        -->
+            <!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>3.4.4</version>
+            </dependency>
+
+            <!--log4j2 end -->
             <!--
             如果这里加上，那么就不会用parent里面的值了。。。全完犊子~
             <dependency>
@@ -145,6 +181,7 @@
         <module>boot3-openid</module>
         <module>boot3-gateway</module>
         <module>boot3-system</module>
+        <module>boot3-common</module>
     </modules>
 
     <build>
