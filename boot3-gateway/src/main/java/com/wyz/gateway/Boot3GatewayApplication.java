@@ -1,4 +1,8 @@
-package com.wyz.boot3gateway;
+/*
+ * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
+ */
+
+package com.wyz.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
