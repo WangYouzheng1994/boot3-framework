@@ -4,24 +4,23 @@
 
 package com.boot3.system.api;
 
+import com.boot3.system.api.domain.SysFile;
+import com.boot3.system.api.factory.RemoteFileFallbackFactory;
+import com.ruoyi.common.core.constant.ServiceNameConstants;
+import com.ruoyi.common.core.domain.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
-import com.ruoyi.common.core.constant.ServiceNameConstants;
-import com.ruoyi.common.core.domain.R;
-import com.boot3.system.api.domain.SysFile;
-import com.boot3.system.api.factory.RemoteFileFallbackFactory;
 
 /**
  * 文件服务
- * 
+ *
  * @author Raise
  */
 @FeignClient(contextId = "remoteFileService", value = ServiceNameConstants.FILE_SERVICE, fallbackFactory = RemoteFileFallbackFactory.class)
-public interface RemoteFileService
-{
+public interface RemoteFileService {
     /**
      * 上传文件
      *
