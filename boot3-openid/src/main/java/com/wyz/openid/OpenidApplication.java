@@ -1,3 +1,7 @@
+/*
+ * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
+ */
+
 package com.wyz.openid;
 
 import org.springframework.boot.SpringApplication;
