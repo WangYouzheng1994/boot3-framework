@@ -2,9 +2,9 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.config;
+package com.boot3.gateway.config;
 
-import com.wyz.gateway.handler.ValidateCodeHandler;
+import com.boot3.gateway.handler.ValidateCodeHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

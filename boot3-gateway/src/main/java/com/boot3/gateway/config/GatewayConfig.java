@@ -2,9 +2,9 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.config;
+package com.boot3.gateway.config;
 
-import com.wyz.gateway.handler.SentinelFallbackHandler;
+import com.boot3.gateway.handler.SentinelFallbackHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;

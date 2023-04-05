@@ -2,11 +2,11 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.filter;
+package com.boot3.gateway.filter;
 
 import java.nio.charset.StandardCharsets;
 
-import com.wyz.gateway.config.properties.XssProperties;
+import com.boot3.gateway.config.properties.XssProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;

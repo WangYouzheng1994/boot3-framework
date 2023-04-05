@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.handler;
+package com.boot3.gateway.handler;
 
 import com.alibaba.csp.sentinel.adapter.gateway.sc.callback.GatewayCallbackManager;
 import com.alibaba.csp.sentinel.slots.block.BlockException;

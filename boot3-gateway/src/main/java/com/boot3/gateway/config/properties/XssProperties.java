@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.config.properties;
+package com.boot3.gateway.config.properties;
 
 import java.util.ArrayList;
 import java.util.List;

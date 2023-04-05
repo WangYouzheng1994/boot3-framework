@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.filter;
+package com.boot3.gateway.filter;
 
 import java.util.Collections;
 import java.util.List;

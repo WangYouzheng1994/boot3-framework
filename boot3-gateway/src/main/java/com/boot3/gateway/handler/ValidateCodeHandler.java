@@ -2,13 +2,13 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.handler;
+package com.boot3.gateway.handler;
 
 import java.io.IOException;
 
+import com.boot3.gateway.service.ValidateCodeService;
 import com.ruoyi.common.core.exception.CaptchaException;
 import com.ruoyi.common.core.web.domain.AjaxResult;
-import com.wyz.gateway.service.ValidateCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;

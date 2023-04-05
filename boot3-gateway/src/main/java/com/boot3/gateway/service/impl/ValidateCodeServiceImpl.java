@@ -2,13 +2,15 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.service.impl;
+package com.boot3.gateway.service.impl;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
 
+import com.boot3.gateway.config.properties.CaptchaProperties;
+import com.boot3.gateway.service.ValidateCodeService;
 import com.google.code.kaptcha.Producer;
 import com.ruoyi.common.core.constant.CacheConstants;
 import com.ruoyi.common.core.constant.Constants;
@@ -17,8 +19,6 @@ import com.ruoyi.common.core.utils.sign.Base64;
 import com.ruoyi.common.core.utils.uuid.IdUtils;
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.redis.service.RedisService;
-import com.wyz.gateway.config.properties.CaptchaProperties;
-import com.wyz.gateway.service.ValidateCodeService;
 import jakarta.annotation.Resource;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

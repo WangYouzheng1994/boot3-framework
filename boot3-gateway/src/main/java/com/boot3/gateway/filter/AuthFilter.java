@@ -2,9 +2,9 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.filter;
+package com.boot3.gateway.filter;
 
-import com.wyz.gateway.config.properties.IgnoreWhiteProperties;
+import com.boot3.gateway.config.properties.IgnoreWhiteProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.handler;
+package com.boot3.gateway.handler;
 
 import com.ruoyi.common.core.utils.ServletUtils;
 import org.springframework.cloud.gateway.support.NotFoundException;

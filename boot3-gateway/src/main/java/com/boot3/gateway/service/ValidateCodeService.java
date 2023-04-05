@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.service;
+package com.boot3.gateway.service;
 
 import com.ruoyi.common.core.exception.CaptchaException;
 import com.ruoyi.common.core.web.domain.AjaxResult;

@@ -2,7 +2,7 @@
  * Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
  */
 
-package com.wyz.gateway.filter;
+package com.boot3.gateway.filter;
 
 import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
@@ -10,9 +10,9 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
+import com.boot3.gateway.config.properties.CaptchaProperties;
 import com.ruoyi.common.core.utils.ServletUtils;
-import com.wyz.gateway.config.properties.CaptchaProperties;
-import com.wyz.gateway.service.ValidateCodeService;
+import com.boot3.gateway.service.ValidateCodeService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
