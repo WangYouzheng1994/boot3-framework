@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.wyz</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <artifactId>boot3-framework-parent</artifactId>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>boot3-api-system</module>
+    </modules>
+
+    <artifactId>boot3-api</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        api系统接口
+    </description>
+
+</project>
