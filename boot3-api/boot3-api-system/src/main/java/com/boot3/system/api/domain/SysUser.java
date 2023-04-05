@@ -10,6 +10,8 @@ import com.ruoyi.common.core.annotation.Excel.Type;
 import com.ruoyi.common.core.annotation.Excels;
 import com.ruoyi.common.core.web.domain.BaseEntity;
 import com.ruoyi.common.core.xss.Xss;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;

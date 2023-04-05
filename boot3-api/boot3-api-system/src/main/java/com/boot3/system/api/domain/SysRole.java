@@ -7,6 +7,7 @@ package com.boot3.system.api.domain;
 import com.ruoyi.common.core.annotation.Excel;
 import com.ruoyi.common.core.annotation.Excel.ColumnType;
 import com.ruoyi.common.core.web.domain.BaseEntity;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import org.apache.commons.lang3.builder.ToStringBuilder;
