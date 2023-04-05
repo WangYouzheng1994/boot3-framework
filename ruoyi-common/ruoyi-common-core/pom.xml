@@ -82,10 +82,10 @@
         </dependency>
 
         <!-- Jaxb -->
-        <dependency>
+       <!-- <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!-- Apache Lang3 -->
         <dependency>
