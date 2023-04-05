@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright(c) 2023-2025 QingDao Raise Technology Co., Ltd. All Rights Reserved.
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.wyz</groupId>
+        <artifactId>boot3-framework-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>ruoyi-common-log</module>
+        <module>ruoyi-common-core</module>
+        <module>ruoyi-common-redis</module>
+        <module>ruoyi-common-seata</module>
+        <module>ruoyi-common-swagger</module>
+        <module>ruoyi-common-security</module>
+        <module>ruoyi-common-datascope</module>
+        <module>ruoyi-common-datasource</module>
+    </modules>
+    <artifactId>ruoyi-common</artifactId>
+    <version>3.6.2</version>
+    <packaging>pom</packaging>
+
+    <description>
+        ruoyi-common通用模块
+    </description>
+
+</project>
