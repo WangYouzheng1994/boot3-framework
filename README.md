@@ -6,8 +6,8 @@
 # Boot3-framework
 Springboot3.0  
 JDK 17  
-SpringCloud  
-SpringCloud Alibaba    
+SpringCloud 2022.0.2   
+SpringCloud Alibaba 2022.0.0.0-RC1      
 FastJson 2.0  
 spring gateway  
 nacos 2.2.1  
@@ -17,9 +17,9 @@ Apache poi
 
 ### 持久层
 mybatis-plus  
-mysql 8.0
-es  
-mongo  
+mysql 8.0.x  
+es待定   
+mongo待定    
 
 ### mq
 kafka   

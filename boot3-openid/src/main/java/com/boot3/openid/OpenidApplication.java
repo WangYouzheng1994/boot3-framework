@@ -6,7 +6,13 @@ package com.boot3.openid;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+/**
+ * 认证中心
+ * 开启fenclients
+ */
+@EnableFeignClients(basePackages = {"com.boot3" })
 @SpringBootApplication
 public class OpenidApplication {
 
