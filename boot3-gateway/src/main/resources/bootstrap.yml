@@ -3,7 +3,7 @@ server:
   port: 8080
 
 # Spring
-spring: 
+spring:
   application:
     # 应用名称
     name: boot3-gateway
@@ -14,16 +14,19 @@ spring:
     nacos:
       discovery:
         # 服务注册地址
-        server-addr: 192.168.80.128:8848
+#        server-addr: 192.168.80.128:8848
+        server-addr: 192.168.3.95:8848
       config:
         # 配置中心地址
-        server-addr: 192.168.80.128:8848
+#        server-addr: 192.168.80.128:8848
+        server-addr: 192.168.3.95:8848
         # 配置文件格式
         file-extension: yml
         # 共享配置
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
-#    sentinel:
+        namespace: f24a5804-3eae-4eaf-9d6b-e28298a0ab3a
+      #    sentinel:
 #      # 取消控制台懒加载
 #      eager: true
 #      transport:
