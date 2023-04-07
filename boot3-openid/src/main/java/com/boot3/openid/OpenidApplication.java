@@ -7,6 +7,7 @@ package com.boot3.openid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
@@ -14,7 +15,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * 开启fenclients
  */
 @EnableFeignClients(basePackages = {"com.boot3" })
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @Slf4j
 public class OpenidApplication {
 
