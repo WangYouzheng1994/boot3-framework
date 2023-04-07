@@ -4,10 +4,13 @@
 package com.boot3.system;
 
 import com.ruoyi.common.security.annotation.EnableCustomConfig;
-import com.ruoyi.common.security.annotation.EnableRyFeignClients;
-import com.ruoyi.common.swagger.annotation.EnableCustomSwagger2;
+// import com.ruoyi.common.security.annotation.EnableRyFeignClients;
+// import com.ruoyi.common.swagger.annotation.EnableCustomSwagger2;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 系统模块
@@ -15,21 +18,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Raise
  */
 @EnableCustomConfig
-@EnableCustomSwagger2
-@EnableRyFeignClients
-@SpringBootApplication
+// @EnableCustomSwagger2
+// @EnableRyFeignClients
+@EnableFeignClients
+@SpringBootApplication()
+@Slf4j
 public class BizSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(BizSystemApplication.class, args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  系统模块启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
-                " .-------.       ____     __        \n" +
-                " |  _ _   \\      \\   \\   /  /    \n" +
-                " | ( ' )  |       \\  _. /  '       \n" +
-                " |(_ o _) /        _( )_ .'         \n" +
-                " | (_,_).' __  ___(_ o _)'          \n" +
-                " |  |\\ \\  |  ||   |(_,_)'         \n" +
-                " |  | \\ `'   /|   `-'  /           \n" +
-                " |  |  \\    /  \\      /           \n" +
-                " ''-'   `'-'    `-..-'              ");
+        log.info("boot3-biz-system is started");
     }
 }

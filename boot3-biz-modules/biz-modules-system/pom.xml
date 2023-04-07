@@ -69,18 +69,34 @@
         </dependency>
 
         <!-- RuoYi Common Swagger -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.wyz</groupId>
             <artifactId>ruoyi-common-swagger</artifactId>
         </dependency>
 
-        <!-- Swagger UI -->
+        &lt;!&ndash; Swagger UI &ndash;&gt;
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.fox.version}</version>
         </dependency>
+-->
+        <!-- SpringBoot Web，如果没有swagger依赖需要单独引入boot-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--   springcloud bootstrap     -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
 
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -96,6 +112,14 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>

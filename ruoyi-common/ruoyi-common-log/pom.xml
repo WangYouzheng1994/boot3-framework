@@ -26,6 +26,5 @@
             <groupId>com.wyz</groupId>
             <artifactId>ruoyi-common-security</artifactId>
         </dependency>
-
     </dependencies>
 </project>

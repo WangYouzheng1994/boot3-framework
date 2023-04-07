@@ -4,6 +4,7 @@
 
 package com.boot3.openid;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -14,10 +15,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @EnableFeignClients(basePackages = {"com.boot3" })
 @SpringBootApplication
+@Slf4j
 public class OpenidApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(OpenidApplication.class, args);
+        log.info("boot3-openid startup!");
     }
 
 }
