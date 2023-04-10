@@ -71,6 +71,12 @@
             <artifactId>kaptcha</artifactId>
         </dependency>
 
+        <!-- Jaxb JWT用 -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+        </dependency>
+
         <!-- RuoYi Common Redis-->
         <dependency>
             <groupId>com.wyz</groupId>

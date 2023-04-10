@@ -9,6 +9,7 @@ import java.io.IOException;
 import com.boot3.gateway.service.ValidateCodeService;
 import com.ruoyi.common.core.exception.CaptchaException;
 import com.ruoyi.common.core.web.domain.AjaxResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
@@ -24,6 +25,7 @@ import reactor.core.publisher.Mono;
  * @author Raise
  */
 @Component
+@Slf4j
 public class ValidateCodeHandler implements HandlerFunction<ServerResponse>
 {
     @Autowired
@@ -39,6 +41,7 @@ public class ValidateCodeHandler implements HandlerFunction<ServerResponse>
         }
         catch (CaptchaException | IOException e)
         {
+            log.error(e.getMessage(), e);
             return Mono.error(e);
         }
         return ServerResponse.status(HttpStatus.OK).body(BodyInserters.fromValue(ajax));

@@ -52,7 +52,7 @@ public class GatewayExceptionHandler implements ErrorWebExceptionHandler
         {
             msg = "内部服务器错误";
         }
-
+        log.error(ex.getMessage(), ex);
         log.error("[网关异常处理]请求路径:{},异常信息:{}", exchange.getRequest().getPath(), ex.getMessage());
 
         return ServletUtils.webFluxResponseWriter(response, msg);
