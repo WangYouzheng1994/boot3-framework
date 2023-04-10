@@ -1,0 +1,3 @@
+com.boot3.system.api.factory.RemoteUserFallbackFactory
+com.boot3.system.api.factory.RemoteLogFallbackFactory
+com.boot3.system.api.factory.RemoteFileFallbackFactory
