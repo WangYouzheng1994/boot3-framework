@@ -33,7 +33,11 @@ export async function login (body: API.LoginParams, options?: Record<string, any
 
 // 获取验证码
 export async function getCaptchaImage () {
-  return request('/captchaImage', {
+  /*return request('/captchaImage', {
+    headers: {
+    },
+  })*/
+  return request('/code', {
     headers: {
     },
   })
