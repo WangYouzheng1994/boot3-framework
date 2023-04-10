@@ -41,7 +41,7 @@ const Login: React.FC = () => {
 
   const fetchUserInfo = async () => {
     const userInfo = await initialState?.fetchUserInfo?.();
-    if (userInfo) {      
+    if (userInfo) {
       await setInitialState((s) => ({
         ...s,
         currentUser: userInfo,
@@ -66,14 +66,13 @@ const Login: React.FC = () => {
         });
         const current = new Date();
         const expireTime = current.setTime(current.getTime() + 1000 * 12 * 60 * 60);
-        setSessionToken(response.token, response.token, expireTime);
+        setSessionToken(response.data.access_token, response.data.access_token, expireTime);
         message.success(defaultLoginSuccessMessage);
 
         await fetchUserInfo();
         /** 此方法会跳转到 redirect 参数所在的位置 */
-        if (!history) 
+        if (!history)
           return;
-        
         const { query } = history.location;
         const { redirect } = query as { redirect: string };
         history.push(redirect || '/');
@@ -92,7 +91,7 @@ const Login: React.FC = () => {
         id: 'pages.login.failure',
         defaultMessage: '登录失败，请重试！',
       });
-      message.error(defaultLoginFailureMessage);      
+      message.error(defaultLoginFailureMessage);
       getCaptchaCode();
     }
   };

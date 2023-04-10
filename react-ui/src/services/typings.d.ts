@@ -77,8 +77,12 @@ declare namespace API {
   type LoginResult = {
     code?: number;
     msg?: string;
-    token?: string;
+    data: LoginResultTokenObj;
   };
+
+  type LoginResultTokenObj = {
+    access_token: string;
+  }
 
   type GetUserInfoResult = {
     code?: number;
