@@ -4,7 +4,11 @@ import type { MenuDataItem } from '@umijs/route-utils';
 
 /** 获取当前的用户 GET /getUserInfo */
 export async function getUserInfo (options?: Record<string, any>) {
-  return request<API.GetUserInfoResult>('/getInfo', {
+  /*return request<API.GetUserInfoResult>('/getInfo', {
+    method: 'GET',
+    ...(options || {}),
+  });*/
+  return request<API.GetUserInfoResult>('/system/user/getInfo', {
     method: 'GET',
     ...(options || {}),
   });
