@@ -24,7 +24,7 @@ export async function logout (options?: Record<string, any>) {
 
 
 export async function getRouters(): Promise<API.GetRoutersResult> {
-  return request('/getRouters');
+  return request('/system/menu/getRouters');
 }
 
 export function convertCompatRouters(childrens: API.RoutersMenuItem[]): MenuDataItem[] {
