@@ -1,4 +1,4 @@
-### 本脚手架调整基于 若依3.x cloud版本升级为 springboot3.0 jdk17
+### 本脚手架调整基于RY_Cloud 3.x升级为 springboot3.0 jdk17
 因springboot3.0以及jdk17升级，依赖升级对稳定性不确定性原因，  
 为避免对ruoyi作者产生纠纷，因此将author替换成raise，如有侵权请及时联系qq 353735348。  
 本框架不可以使用到生产环境，因本框架造成的任何损失，请自行承担！
@@ -16,21 +16,20 @@ seata
 Apache poi  
 
 ### 持久层
-mybatis-plus  
-mysql 8.0.x  
-es待定   
-mongo待定    
+Mybatis-Plus  
+Mysql 8.0.x  
+Elasticsearch待定   
+Mongo待定    
 
-### mq
-kafka   
-rabbit
+### MQ
+Apache Kafka   
+Apache RabbitMQ
 
-### cache
-memcached  
-redis
+### Cache
+Memcached  
+Redis
 
-
-### 搭建过程
+### 运维搭建过程
 1. 安装nacos
 2. 创建业务数据库，导入 ry_20220814.sql
 3. 创建nacos数据库， 导入nacos-mysql-schema.sql;导入nacos ry配置nacos-biz-init.sql
@@ -50,7 +49,9 @@ nacos
 nacos
 ```
 
-
 #### jdbc连接如下
 192.168.3.4:3306/db_boot3
+
+### 前端React
+建议 Nodejs 18
 
