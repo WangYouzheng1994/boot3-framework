@@ -3,6 +3,8 @@
 为避免对ruoyi作者产生纠纷，因此将author替换成raise，如有侵权请及时联系qq 353735348。  
 本框架不可以使用到生产环境，因本框架造成的任何损失，请自行承担！
 
+特别鸣谢 whiteshader@163.com
+
 # Boot3-framework
 Springboot3.0  
 JDK 17  
@@ -34,6 +36,14 @@ https://pro.ant.design/zh-CN/
 antd pro 5.0  
 umi 3.5
 https://v3.umijs.org/
+
+* 布局  
+https://v3.umijs.org/zh-CN/plugins/plugin-layout
+https://www.npmjs.com/package/@ant-design/pro-layout
+
+* 高级菜单
+https://beta-pro.ant.design/docs/advanced-menu-cn
+
 
 
 ### 运维搭建过程
