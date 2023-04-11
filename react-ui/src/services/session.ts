@@ -22,11 +22,17 @@ export async function logout (options?: Record<string, any>) {
   });
 }
 
-
+/**
+ * 获取远程路由信息
+ */
 export async function getRouters(): Promise<API.GetRoutersResult> {
   return request('/system/menu/getRouters');
 }
 
+/**
+ * 转换远程路由信息为antd能识别的
+ * @param childrens
+ */
 export function convertCompatRouters(childrens: API.RoutersMenuItem[]): MenuDataItem[] {
   return childrens.map((item: API.RoutersMenuItem) => {
     return {
@@ -38,6 +44,7 @@ export function convertCompatRouters(childrens: API.RoutersMenuItem[]): MenuData
       hideInMenu: item.hidden,
       component: item.component,
       authority: item.perms,
+      // wrappers: ['@/components/KeepAlive']
     };
   });
 }
