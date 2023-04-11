@@ -86,6 +86,11 @@ public class SysMenuController extends BaseController {
         } else if (UserConstants.YES_FRAME.equals(menu.getIsFrame()) && !StringUtils.ishttp(menu.getPath())) {
             return error("新增菜单'" + menu.getMenuName() + "'失败，地址必须以http(s)://开头");
         }
+        // Add By WangYouzheng 2023年4月11日16:47:34 添加一级业务目录时（父菜单id为0时），菜单类型必须选择【目录】
+        if (menu.getParentId() == 0L && UserConstants.TYPE_MENU.equalsIgnoreCase(menu.getMenuType())) {
+            return error("添加一级业务目录时，菜单类型必须选择【目录】");
+        }
+
         menu.setCreateBy(SecurityUtils.getUsername());
         return toAjax(menuService.insertMenu(menu));
     }
