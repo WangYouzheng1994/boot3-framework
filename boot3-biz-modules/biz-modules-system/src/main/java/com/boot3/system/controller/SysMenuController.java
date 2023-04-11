@@ -87,7 +87,7 @@ public class SysMenuController extends BaseController {
             return error("新增菜单'" + menu.getMenuName() + "'失败，地址必须以http(s)://开头");
         }
         // Add By WangYouzheng 2023年4月11日16:47:34 添加一级业务目录时（父菜单id为0时），菜单类型必须选择【目录】
-        if (menu.getParentId() == 0L && UserConstants.TYPE_MENU.equalsIgnoreCase(menu.getMenuType())) {
+        if (menu.getParentId() == 0L && !UserConstants.TYPE_DIR.equalsIgnoreCase(menu.getMenuType())) {
             return error("添加一级业务目录时，菜单类型必须选择【目录】");
         }
 
@@ -108,6 +108,10 @@ public class SysMenuController extends BaseController {
             return error("修改菜单'" + menu.getMenuName() + "'失败，地址必须以http(s)://开头");
         } else if (menu.getMenuId().equals(menu.getParentId())) {
             return error("修改菜单'" + menu.getMenuName() + "'失败，上级菜单不能选择自己");
+        }
+        // Add By WangYouzheng 2023年4月11日16:47:34 添加一级业务目录时（父菜单id为0时），菜单类型必须选择【目录】
+        if (menu.getParentId() == 0L && !UserConstants.TYPE_DIR.equalsIgnoreCase(menu.getMenuType())) {
+            return error("添加一级业务目录时，菜单类型必须选择【目录】");
         }
         menu.setUpdateBy(SecurityUtils.getUsername());
         return toAjax(menuService.updateMenu(menu));

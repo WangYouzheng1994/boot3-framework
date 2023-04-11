@@ -19,7 +19,7 @@ import { createIcon } from '@/utils/IconUtil';
  *
  * @author whiteshader@163.com
  * @datetime  2021/09/16
- * 
+ *
  * */
 
 
@@ -37,6 +37,7 @@ const handleAdd = async (fields: MenuType) => {
       message.success('添加成功');
     } else {
       message.error(resp.msg);
+      return false;
     }
     return true;
   } catch (error) {
