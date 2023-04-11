@@ -19,8 +19,9 @@ const Settings: LayoutSettings & {
   pwa: false,
   logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
   iconfontUrl: '',
-  tabsLayout: true,  
+  tabsLayout: true,
   apiBasePath: '/api',
+  menu: {locale: false}
 };
 
 export default Settings;
