@@ -1,3 +1,26 @@
+
+### 启动
+* Node：建议v16或以上
+
+* 升级npm
+```
+npm install -g npm
+```
+* 安装依赖 方法一
+
+```
+npm install --registry=https://registry.npmmirror.com
+```
+
+* 如果出现依赖冲突的问题，是因为升级了npm 导致依赖有冲突
+```
+方案1
+npm i --registry=https://registry.npmmirror.com --legacy-peer-deps 不覆盖依赖
+方案2
+npm i --registry=https://registry.npmmirror.com --force  强制从远端拉取新覆盖依赖
+```
+
+
 # Ant Design Pro
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
