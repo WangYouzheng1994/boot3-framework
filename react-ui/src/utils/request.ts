@@ -60,6 +60,7 @@ const request = createClient();
 // 更换令牌的时间区间
 const checkRegion = 5 * 60 * 1000;
 
+// @ts-ignore
 request.interceptors.request.use((url: string, options: any) => {
   // console.log('-------------------------')
   console.log('request:', url);
