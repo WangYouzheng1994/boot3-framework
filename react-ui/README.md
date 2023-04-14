@@ -1,3 +1,10 @@
+### React17
+ 
+react17 官方教程  
+https://17.reactjs.org/docs/getting-started.html
+
+### Umi3.x
+https://v3.umijs.org/zh-CN/docs/runtime-config#patchroutes-routes-
 
 ### 启动
 * Node：建议v16或以上
