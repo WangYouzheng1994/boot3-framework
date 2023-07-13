@@ -45,7 +45,7 @@ public class Excel2Pdf {
     }
 
     /**
-     * itextDemo
+     * itextDemo，此demo只能验证数据层的迁移，但是需要自己去完善读取excel的style并且转制成对应的pdf style
      *
      * @throws Exception
      */
