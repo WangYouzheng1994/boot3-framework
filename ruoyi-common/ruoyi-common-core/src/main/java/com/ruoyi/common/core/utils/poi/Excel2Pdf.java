@@ -187,7 +187,10 @@ public class Excel2Pdf {
 
 
     /**
+     * aspose demo :
      * excel 转为pdf 输出。
+     * 需要手动将破解包
+     * lib/aspose-cells-20.7-crack.jar打到仓库中
      *
      * @param sourceFilePath excel文件
      * @param desFilePathd   pad 输出文件目录
