@@ -11,8 +11,8 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 放行白名单配置
- * 
+ * 放行白名单配置，具体需要查看nacos的网关配置哈
+ *
  * @author Raise
  */
 @Configuration

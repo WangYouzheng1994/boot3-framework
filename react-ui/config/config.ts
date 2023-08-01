@@ -26,9 +26,11 @@ export default defineConfig({
     // default true, when it is true, will use `navigator.language` overwrite default
     baseNavigator: true,
   },
+  // 按需加载
   dynamicImport: {
     loading: '@ant-design/pro-layout/es/PageLoading',
   },
+  mountElementId: 'app', // 指定react app 渲染到的html元素id，默认是root， 一般不用改，除非手动增加了document.ejs以后
   targets: {
     ie: 11,
   },
@@ -41,13 +43,14 @@ export default defineConfig({
   // esbuild is father build tools
   // https://umijs.org/plugins/plugin-esbuild
   esbuild: {},
-  title: false,
+  // title: "小王~", // 设置标题
+  // favicon: '/favicon.ico', // 使用本地图片放到public下面
   ignoreMomentLocale: true,
   proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {
     basePath: '/',
   },
-  // Fast Refresh 热更新
+  // Fast Refresh 热更新， 可以保持组件状态
   fastRefresh: {},
   openAPI: [
     {
@@ -64,12 +67,12 @@ export default defineConfig({
     },
   ],
   nodeModulesTransform: {
-    type: 'none',
+    type: 'none', // 不编译 nodemoduls下的文件，兼容性差； all 编译nodemodules下的文件，慢。
   },
   mfsu: {},
   webpack5: {},
   exportStatic: {},
   externals: {
-  
+
   }
 });

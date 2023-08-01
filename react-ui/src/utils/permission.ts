@@ -1,5 +1,5 @@
 export function matchPermission (permissions: string[]|undefined, value: any): boolean {
-  if(permissions === undefined) 
+  if(permissions === undefined)
     return false;
   const type = typeof value;
   if (type === 'string') {
@@ -51,10 +51,10 @@ export function matchPerm (permissions: string[], value: string) {
  * @returns {Boolean}
  */
 export function checkRole (roles: API.Role[]|undefined, value: string[]) {
-  if (roles && value && value.length > 0) { 
+  if (roles && value && value.length > 0) {
     for(let i = 0; i< roles?.length; i ++) {
       for(let j = 0; j< value?.length; j ++) {
-        if(value[j] === roles[i].roleKey) {          
+        if(value[j] === roles[i].roleKey) {
           return true;
         }
       }

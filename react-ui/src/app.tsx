@@ -60,6 +60,46 @@ export async function getInitialState(): Promise<{
   };
 }
 
+export function patchRoutes ({ routes }) {
+  // 动态添加路由
+  routes.push(
+    {
+      path: '/wyz',
+      icon: 'BugOutlined',
+      component: require('@/layouts/TabsLayout').default,
+      routes: [
+        {
+          path: '/',
+          redirect: '/wyz/test',
+        },
+        {
+          path: '/wyz/test',
+          name: 'wyztest',
+          component: require('@/pages/system/wyz/index').default,
+          wrappers: [require('@/components/KeepAlive').default],
+          KeepAlive: true,
+          access: 'authorize',
+          title: '王有政测试'
+        },
+        {
+          path: '/wyz/dynamic',
+          name: 'dynamic',
+          component: 'system/wyz/index',
+          wrappers: ['@/components/KeepAlive'],
+          KeepAlive: true,
+          access: 'authorize',
+          title: '王有政测试dynamic'
+        },
+      ]
+    }
+  )
+}
+
+/*export function render(oldRender) {
+  alert("123")
+  oldRender();
+}*/
+
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
@@ -99,7 +139,6 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
         }
         // initialState.currentUser 中包含了所有用户信息
         const menus = await getRoutersInfo();
-        debugger;
         setInitialState((preInitialState) => ({
           ...preInitialState,
           menus,

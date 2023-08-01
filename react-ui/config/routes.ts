@@ -2,10 +2,41 @@
  *
  * @author whiteshader@163.com
  * @datetime  2022/02/22
- * 
+ *
  * */
 
 export default [
+  /*
+  测试通过
+  {
+    path: '/wyz',
+    icon: 'BugOutlined',
+    component: '@/layouts/TabsLayout',
+    routes: [
+      {
+        path: '/',
+        redirect: '/wyz/test',
+      },
+      {
+        path: '/wyz/test',
+        name: 'wyztest',
+        component: 'system/wyz/index',
+        wrappers: ['@/components/KeepAlive'],
+        KeepAlive: true,
+        access: 'authorize',
+        title: '王有政测试'
+      },
+      {
+        path: '/wyz/dynamic',
+        name: 'dynamic',
+        component: 'system/wyz/index',
+        wrappers: ['@/components/KeepAlive'],
+        KeepAlive: true,
+        access: 'authorize',
+        title: '王有政测试dynamic'
+      },
+    ]
+  },*/
   {
     path: '/user',
     layout: false,
@@ -335,7 +366,7 @@ export default [
         name: 'gen',
         icon: 'PartitionOutlined',
         path: '/tool/gen',
-        component: 'tool/gen/index', 
+        component: 'tool/gen/index',
         access: 'authorize',
         wrappers: ['@/components/KeepAlive'],
         KeepAlive: true,
@@ -370,4 +401,5 @@ export default [
   {
     component: './404',
   },
+
 ];

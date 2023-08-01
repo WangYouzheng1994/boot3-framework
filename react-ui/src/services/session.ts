@@ -51,6 +51,7 @@ export function convertCompatRouters(childrens: API.RoutersMenuItem[]): MenuData
 
 export async function getRoutersInfo(): Promise<MenuDataItem[]> {
   return getRouters().then((res) => {
+    // 存到route
     return convertCompatRouters(res.data);
   });
 }

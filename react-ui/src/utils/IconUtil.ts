@@ -9,12 +9,15 @@ export function getIcon(name: string): React.ReactNode | string {
 }
 
 export function createIcon(icon: string | any): React.ReactNode | string {
-  if (typeof icon === 'object') {
-    return icon;
-  }
-  const ele = allIcons[icon];
-  if (ele) {
-    return React.createElement(allIcons[icon]);
+  if (icon) {
+    if (typeof icon === 'object') {
+      return icon;
+    }
+    const ele = allIcons[icon];
+    if (ele) {
+      return React.createElement(allIcons[icon]);
+    }
+  } else {
   }
   return '';
 }

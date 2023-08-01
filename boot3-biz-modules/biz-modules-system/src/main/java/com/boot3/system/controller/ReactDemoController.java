@@ -1,13 +1,12 @@
 package com.boot3.system.controller;
 
-import com.boot3.system.domain.SysConfig;
 import com.ruoyi.common.core.web.domain.AjaxResult;
-import com.ruoyi.common.core.web.page.TableDataInfo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description:
@@ -20,9 +19,253 @@ import java.util.List;
 public class ReactDemoController {
     @GetMapping("/list")
     public AjaxResult list() {
-        // startPage();
-        // List<SysConfig> list = configService.selectConfigList(config);
         return AjaxResult.success(List.of(1,2,3,4));
-        // return getDataTable(list);
+    }
+
+    @GetMapping("/info")
+    public AjaxResult info() {
+        return AjaxResult.success(Map.of("小王", "i am values~~~~~``"));
+    }
+
+    class DemoBean {
+
+        /**
+         * total_count : 1
+         * incomplete_results : false
+         * items : [{"login":"WangYouzheng1994","id":39856354,"node_id":"MDQ6VXNlcjM5ODU2MzU0","avatar_url":"https://avatars.githubusercontent.com/u/39856354?v=4","gravatar_id":"","url":"https://api.github.com/users/WangYouzheng1994","html_url":"https://github.com/WangYouzheng1994","followers_url":"https://api.github.com/users/WangYouzheng1994/followers","following_url":"https://api.github.com/users/WangYouzheng1994/following{/other_user}","gists_url":"https://api.github.com/users/WangYouzheng1994/gists{/gist_id}","starred_url":"https://api.github.com/users/WangYouzheng1994/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/WangYouzheng1994/subscriptions","organizations_url":"https://api.github.com/users/WangYouzheng1994/orgs","repos_url":"https://api.github.com/users/WangYouzheng1994/repos","events_url":"https://api.github.com/users/WangYouzheng1994/events{/privacy}","received_events_url":"https://api.github.com/users/WangYouzheng1994/received_events","type":"User","site_admin":false,"score":1}]
+         */
+
+        private int total_count;
+        private boolean incomplete_results;
+        private List<ItemsBean> items;
+
+        public int getTotal_count() {
+            return total_count;
+        }
+
+        public void setTotal_count(int total_count) {
+            this.total_count = total_count;
+        }
+
+        public boolean isIncomplete_results() {
+            return incomplete_results;
+        }
+
+        public void setIncomplete_results(boolean incomplete_results) {
+            this.incomplete_results = incomplete_results;
+        }
+
+        public List<ItemsBean> getItems() {
+            return items;
+        }
+
+        public void setItems(List<ItemsBean> items) {
+            this.items = items;
+        }
+
+        public static class ItemsBean {
+            /**
+             * login : WangYouzheng1994
+             * id : 39856354
+             * node_id : MDQ6VXNlcjM5ODU2MzU0
+             * avatar_url : https://avatars.githubusercontent.com/u/39856354?v=4
+             * gravatar_id :
+             * url : https://api.github.com/users/WangYouzheng1994
+             * html_url : https://github.com/WangYouzheng1994
+             * followers_url : https://api.github.com/users/WangYouzheng1994/followers
+             * following_url : https://api.github.com/users/WangYouzheng1994/following{/other_user}
+             * gists_url : https://api.github.com/users/WangYouzheng1994/gists{/gist_id}
+             * starred_url : https://api.github.com/users/WangYouzheng1994/starred{/owner}{/repo}
+             * subscriptions_url : https://api.github.com/users/WangYouzheng1994/subscriptions
+             * organizations_url : https://api.github.com/users/WangYouzheng1994/orgs
+             * repos_url : https://api.github.com/users/WangYouzheng1994/repos
+             * events_url : https://api.github.com/users/WangYouzheng1994/events{/privacy}
+             * received_events_url : https://api.github.com/users/WangYouzheng1994/received_events
+             * type : User
+             * site_admin : false
+             * score : 1
+             */
+
+            /**
+             * 用户名
+             */
+            private String login;
+            private int id;
+            private String node_id;
+            /**
+             * 头像
+             */
+            private String avatar_url;
+            private String gravatar_id;
+            private String url;
+            /**
+             * 个人主页
+             */
+            private String html_url;
+            private String followers_url;
+            private String following_url;
+            private String gists_url;
+            private String starred_url;
+            private String subscriptions_url;
+            private String organizations_url;
+            private String repos_url;
+            private String events_url;
+            private String received_events_url;
+            private String type;
+            private boolean site_admin;
+            private int score;
+
+            public String getLogin() {
+                return login;
+            }
+
+            public void setLogin(String login) {
+                this.login = login;
+            }
+
+            public int getId() {
+                return id;
+            }
+
+            public void setId(int id) {
+                this.id = id;
+            }
+
+            public String getNode_id() {
+                return node_id;
+            }
+
+            public void setNode_id(String node_id) {
+                this.node_id = node_id;
+            }
+
+            public String getAvatar_url() {
+                return avatar_url;
+            }
+
+            public void setAvatar_url(String avatar_url) {
+                this.avatar_url = avatar_url;
+            }
+
+            public String getGravatar_id() {
+                return gravatar_id;
+            }
+
+            public void setGravatar_id(String gravatar_id) {
+                this.gravatar_id = gravatar_id;
+            }
+
+            public String getUrl() {
+                return url;
+            }
+
+            public void setUrl(String url) {
+                this.url = url;
+            }
+
+            public String getHtml_url() {
+                return html_url;
+            }
+
+            public void setHtml_url(String html_url) {
+                this.html_url = html_url;
+            }
+
+            public String getFollowers_url() {
+                return followers_url;
+            }
+
+            public void setFollowers_url(String followers_url) {
+                this.followers_url = followers_url;
+            }
+
+            public String getFollowing_url() {
+                return following_url;
+            }
+
+            public void setFollowing_url(String following_url) {
+                this.following_url = following_url;
+            }
+
+            public String getGists_url() {
+                return gists_url;
+            }
+
+            public void setGists_url(String gists_url) {
+                this.gists_url = gists_url;
+            }
+
+            public String getStarred_url() {
+                return starred_url;
+            }
+
+            public void setStarred_url(String starred_url) {
+                this.starred_url = starred_url;
+            }
+
+            public String getSubscriptions_url() {
+                return subscriptions_url;
+            }
+
+            public void setSubscriptions_url(String subscriptions_url) {
+                this.subscriptions_url = subscriptions_url;
+            }
+
+            public String getOrganizations_url() {
+                return organizations_url;
+            }
+
+            public void setOrganizations_url(String organizations_url) {
+                this.organizations_url = organizations_url;
+            }
+
+            public String getRepos_url() {
+                return repos_url;
+            }
+
+            public void setRepos_url(String repos_url) {
+                this.repos_url = repos_url;
+            }
+
+            public String getEvents_url() {
+                return events_url;
+            }
+
+            public void setEvents_url(String events_url) {
+                this.events_url = events_url;
+            }
+
+            public String getReceived_events_url() {
+                return received_events_url;
+            }
+
+            public void setReceived_events_url(String received_events_url) {
+                this.received_events_url = received_events_url;
+            }
+
+            public String getType() {
+                return type;
+            }
+
+            public void setType(String type) {
+                this.type = type;
+            }
+
+            public boolean isSite_admin() {
+                return site_admin;
+            }
+
+            public void setSite_admin(boolean site_admin) {
+                this.site_admin = site_admin;
+            }
+
+            public int getScore() {
+                return score;
+            }
+
+            public void setScore(int score) {
+                this.score = score;
+            }
+        }
     }
 }

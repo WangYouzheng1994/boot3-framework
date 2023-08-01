@@ -1,6 +1,7 @@
 const { uniq } = require('lodash');
 const RouterConfig = require('../../config/config').default.routes;
 
+// 前端启动地址
 const BASE_URL = `http://localhost:${process.env.PORT || 8001}`;
 
 function formatter(routes, parentPath = '') {

@@ -2,7 +2,7 @@
  *
  * @author whiteshader@163.com
  * @datetime  2022/02/15
- * 
+ *
  * */
 
 import type { MenuDataItem } from "@umijs/route-utils";
@@ -15,7 +15,7 @@ import { checkRole, matchPermission } from "./utils/permission";
 export default function access (initialState: { currentUser: API.CurrentUser | undefined, menus: MenuDataItem[] | undefined }) {
   const { currentUser, menus } = initialState || {};
   return {
-    canAdmin: currentUser && currentUser.access === 'admin',
+    canAdmin: currentUser && (currentUser.access === 'admin' || currentUser.userName === 'admin'),
     hasPerms: (perm: string) => {
       return matchPermission(currentUser?.permissions, perm);
     },

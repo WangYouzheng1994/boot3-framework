@@ -26,8 +26,14 @@ npm i --registry=https://registry.npmmirror.com --legacy-peer-deps 不覆盖依�
 方案2
 npm i --registry=https://registry.npmmirror.com --force  强制从远端拉取新覆盖依赖
 ```
+---
+### Umi 3.x说明
+1. umi默认的配置文件是工程根目录下的 .umirc.ts文件，实际项目中拆分到/config目录下
+2. umi的 /src/pages/document.ejs 等价于react中的 public/index.html
+3. 
 
 
+---
 # Ant Design Pro
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
