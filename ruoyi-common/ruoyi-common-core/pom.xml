@@ -155,11 +155,11 @@
         </dependency>
 
 
-            <!--<dependency>
-                <groupId>e-iceblue</groupId>
-                <artifactId>spire.xls</artifactId>
-                <version>13.6.5</version>
-            </dependency>-->
+        <!--<dependency>
+            <groupId>e-iceblue</groupId>
+            <artifactId>spire.xls</artifactId>
+            <version>13.6.5</version>
+        </dependency>-->
 
     <!--  crack aspose 用于excel转pdf  -->
         <dependency>
@@ -168,11 +168,13 @@
             <version>3.20.0-GA</version>
         </dependency>
 
+<!--   mvn install:install-file -DgroupId=com.aspose -DartifactId=aspose-cells -Dversion=20.7 -Dpackaging=jar -Dfile=./aspose-cells-20.7-crack.jar     -->
+<!--  私服 mvn deploy:deploy-file -DgroupId=com.aspose -DartifactId=aspose-cells -Dversion=20.7 -Dpackaging=jar -Dfile=./aspose-cells-20.7-crack.jar -Durl=http://192.168.3.38:8081/repository/third-party/ -DrepositoryId=third-party     -->
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-cells</artifactId>
             <version>20.7</version>
-            <systemPath>${basedir}/lib/aspose-cells-20.7-crack.jar</systemPath>
+<!--            <systemPath>${basedir}/lib/aspose-cells-20.7-crack.jar</systemPath>-->
         </dependency>
     </dependencies>
 </project>
