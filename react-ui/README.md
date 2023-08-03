@@ -94,3 +94,20 @@ npm test
 ## More
 
 You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+
+
+
+
+####
+
+围绕路由踩的坑
+https://webliuyang.com/react/problem/Umi%E6%A1%86%E6%9E%B6%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1.html
+
+umi框架
+https://v3.umijs.org/zh-CN/plugins/plugin-layout
+
+此项目对应的 antd pro
+https://v4-pro.ant.design/index-cn
+
+此对应了 布局框架插件
+https://procomponents.ant.design/components/layout
