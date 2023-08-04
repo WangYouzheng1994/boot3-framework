@@ -9,7 +9,8 @@ const Settings: LayoutSettings & {
   navTheme: 'light',
   headerTheme: 'light',
   primaryColor: '#722ED1',
-  layout: 'mix',
+  // layout: 'mix', 混合布局
+  layout: 'side',
   splitMenus: true,
   contentWidth: 'Fluid',
   fixedHeader: true,

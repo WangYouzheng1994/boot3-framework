@@ -1,6 +1,6 @@
 /*
- * @Author: wangYe 
- * @Date: 2020-12-18 13:25:08 
+ * @Author: wangYe
+ * @Date: 2020-12-18 13:25:08
  * @Last Modified by: WhiteShader
  * @Last Modified time: 2022-02-21 11:12:12
  */
@@ -46,7 +46,7 @@ export default function KeepAlivePage(props: any) {
             }
         }
     }, [])
-
+debugger;
     if (props.route.keepAlive) {
         return (
             <KeepAlive saveScrollPosition={props.route.saveScrollPosition ?? "screen"} name={props.route.name}>
